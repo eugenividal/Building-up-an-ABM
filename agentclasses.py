@@ -1,4 +1,9 @@
-import random
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 16 20:31:34 2017
+
+@author: Eugeni
+"""
 
 class Agent():
             
