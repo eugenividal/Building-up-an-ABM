@@ -5,6 +5,8 @@ Created on Sat Dec 16 20:31:34 2017
 @author: Eugeni
 """
 
+import random
+
 class Agent():
             
     def __init__(self, environment, agents):
