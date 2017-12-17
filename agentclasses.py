@@ -6,6 +6,8 @@ GEOG5995M Programming for Social Science: Core Skills
 """
 import random
 
+import random
+
 class Agent():
             
     def __init__(self, environment, agents):
