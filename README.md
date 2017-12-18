@@ -1,6 +1,6 @@
-# GEOG5995M_Assessment1
+# Building-up-an-ABM
 
-Agent-Based Model practicals code
+Code of the Agent-Based Model (AMB) built up in the practicals of the module GEOG5995M
 
 This is the repository for the code of the Agent-Based Model (AMB) built up in the practicals of the module GEOG5995M Programming for Social Science: Core Skills. 
 The model was built up in Python (programming language) and it is a simple but complete AMB. 
