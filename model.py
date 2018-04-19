@@ -12,7 +12,7 @@ import agentclasses
 import csv
 
 # Parameters of the model.
-num_of_agents = 10
+num_of_agents = 1000
 num_of_iterations = 100
 neighbourhood = 20
 
@@ -42,13 +42,6 @@ ax = fig.add_axes([0, 0, 1, 1])
 for i in range(num_of_agents):
     agents.append(agentclasses.Agent(environment, agents))
 
-carry_on = True
-
-# Function to set up animation.
-def update(frame_number): 
-    
-    fig.clear()   
-    global carry_on
 
 # Move the agents (and other behaviours).  
     for j in range (num_of_iterations):
@@ -62,17 +55,6 @@ def update(frame_number):
     for i in range(num_of_agents):
         matplotlib.pyplot.scatter(agents[i].x, agents[i].y)
         matplotlib.pyplot.imshow(environment)
-
-# Generator function stops supplying stuff when the condition is met (Animation).     
-def gen_function(b = [0]):
-    a = 0
-    global carry_on #Not actually needed as we're not assigning, but clearer
-    while (a <num_of_iterations) & (carry_on) :
-        yield a			# Returns control and waits next call.
-        a = a + 1
-
-# Animation plot.
-animation = matplotlib.animation.FuncAnimation(fig, update, frames=gen_function, repeat=False)
 
 matplotlib.pyplot.show()
   
