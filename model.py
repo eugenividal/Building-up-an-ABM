@@ -16,7 +16,7 @@ num_of_agents = 1000
 num_of_iterations = 100
 neighbourhood = 20
 
-# Set up environment list (before the agents list).
+# Set up environment list (before the agents' list).
 environment = []
 # Read enviroment data.
 f = open('in.txt', newline='')
